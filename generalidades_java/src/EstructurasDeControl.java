@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class EstructurasDeControl {
     public static void main(String[] args) {
         // Condicional IF ELSE
@@ -11,43 +13,61 @@ public class EstructurasDeControl {
         }
         // Control Condicional SWITCH
 
-        String bebida = "Vino";
+        Scanner scanner = new Scanner(System.in);
+
+        String descripcion = """
+                Bienvenido a la maquina de bebidas
+                Elige una opción:
+                1. Café
+                2. Tea
+                3. Agua
+                4. Mate
+                5. Vino
+                6. Cerveza
+                """;
+        System.out.println(descripcion);
+
+        int bebida = scanner.nextInt();
 
         switch (bebida) {
-            case "Café":
-                System.out.println("Buena elección");
+            case 1:
+                System.out.println("Buena elección, Café");
                 break;
-            case "Tea":
-                System.out.println("No tan Buena eleccción");
+            case 2:
+                System.out.println("No tan Buena eleccción, Tea");
                 break;
-            case "Agua":
-                System.out.println("Buena eleccción para hidratar, pero mejor el café");
+            case 3:
+                System.out.println("Buena eleccción para hidratar, pero mejor el café, Agua");
                 break;
-            case "Mate":
-                System.out.println("No he probado pero igual y no sabe bien");
+            case 4:
+                System.out.println("No he probado pero igual y no sabe bien, Mate");
                 break;
-            case "Vino":
+            case 5:
                 int edadBebida = 22;
                 if (edadBebida > 20) {
-                    System.out.println("Buena eleccción, pero eres viejo");
+                    System.out.println("Buena eleccción, pero eres viejo, Vino");
                     break;
                 } else {
-                    System.out.println("No salgas con mamadas mary jane");
+                    System.out.println("No salgas con mamadas mary jane, Primero limpia bien tu yiyopo");
                     break;
                 }
-            case "Cerveza":
+            case 6:
                 int edadBebidaC = 19;
                 if (edadBebidaC > 20) {
                     System.out.println("Buena eleccción, pero no me prendas eso jaja");
                     break;
                 } else {
-                    System.out.println("No salgas con mamadas mary jane");
+                    System.out.println("No salgas con mamadas mary jane, Cerveza");
                     break;
                 }
 
             default:
+                System.out.println("Fin ...");
                 break;
         }
+
+        System.out.println("Distruta");
+        scanner.close();
 
     }
 
