@@ -15,7 +15,7 @@ public class App {
         String[] date = { "cama", "jota" };
         char letra = 'o';
         double media = (8.2 + 6.0 + 9.0) / 3;
-
+        //Casting 
         int clasificacion = (int) (media / 2);
 
         System.out.println(lorem + "fecha de lanzamiento: " + fechaDeLazamiento);
