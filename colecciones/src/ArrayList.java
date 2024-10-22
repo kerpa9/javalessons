@@ -23,5 +23,8 @@ public class ArrayList {
         for (Carro car : lista) {
             System.out.println("Carros: " + car.getMarca());
         }
+
+        // Valor n
+        System.out.println("Valor 0: " + lista.get(0).getMarca());
     }
 }
