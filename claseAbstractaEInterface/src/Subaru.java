@@ -8,7 +8,7 @@ public class Subaru extends Carros  implements IDetalles{
     }
 
     @Override
-    void motor() {
+    public void motor() {
         System.out.println(marca + "Excelente marca");
 
     }

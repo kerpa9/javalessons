@@ -7,5 +7,5 @@ public abstract class Carros {
     }
     
 
-    abstract void motor();
+    public abstract void motor();
 }
