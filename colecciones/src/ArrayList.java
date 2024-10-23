@@ -26,5 +26,19 @@ public class ArrayList {
 
         // Valor n
         System.out.println("Valor 0: " + lista.get(0).getMarca());
+
+        //Remove si se sabe la posición del dato
+        
+        System.out.println( "--------------USO DEL REMOVE--------------------");
+        lista.remove(0);
+        for (Carro car : lista) {
+            System.out.println("Carros: " + car.getMarca());
+        }
+        
+        //Remove donde no sabe la posición del dato
+
+
+
+
     }
 }
