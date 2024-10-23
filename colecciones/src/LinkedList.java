@@ -34,6 +34,23 @@ public class LinkedList {
             System.out.println("Carros: " + car.getMarca());
         }
 
+
+        //Metodos LinkedList
+        System.out.println( "--------------Tamaño de lista--------------------");
+        System.out.println( "El tamaño de la LinkedList es: "+ lista.size());
+
+        System.out.println( "--------------Entrega el primer y ultimo dato--------------------");
+        System.out.println( "Primer dato LinkedList es: "+ lista.getFirst().toString());
+        System.out.println( "Último dato LinkedList es: "+ lista.getLast().toString());
+
+        System.out.println( "--------------Borrar toda la lista--------------------");
+        System.out.println( "Lista eliminada: ");
+        // lista.clear();
+        System.out.println( "--------------¿Está vacía la lista?--------------------");
+        System.out.println( "¿Lista vacia?: "+ lista.isEmpty());
+
+
+
     }
 
 }

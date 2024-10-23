@@ -35,7 +35,16 @@ public class ArrayList {
             System.out.println("Carros: " + car.getMarca());
         }
         
-        //Remove donde no sabe la posición del dato
+        //Metodos ArrayList
+        System.out.println( "--------------Tamaño de lista--------------------");
+        System.out.println( "El tamaño de la ArrayList es: "+ lista.size());
+        System.out.println( "--------------Borrar toda la lista--------------------");
+        System.out.println( "Lista eliminada: ");
+        // lista.clear();
+        System.out.println( "--------------¿Está vacía la lista?--------------------");
+        System.out.println( "¿Lista vacia?: "+ lista.isEmpty());
+
+
 
 
 
