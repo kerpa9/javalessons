@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Relacion {
     public static void main(String[] args) throws Exception {
-        
+
         Carro carro = new Carro();
         carro.setIdc(1);
         carro.setMarca("La Ferrari");
@@ -29,7 +29,7 @@ public class Relacion {
 
         System.out.println("---------------------CARRO------------------");
 
-        System.out.println("El auto" + carro.getModelo());
+        System.out.println("El auto " + carro.getMarca() + " " + carro.getModelo() + "sus propietarios son: "+" "+ carro.getProplist().toString());
 
     }
 }
